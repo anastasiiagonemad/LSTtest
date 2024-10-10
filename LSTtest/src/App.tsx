@@ -5,7 +5,7 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Search />} />
+        <Route path="/LSTtest" element={<Search />} />
       </Routes>
     </BrowserRouter>
   );
