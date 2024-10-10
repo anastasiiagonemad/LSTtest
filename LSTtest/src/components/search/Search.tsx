@@ -88,6 +88,7 @@ const Search: React.FC = () => {
                 setSearchAddress(item.unrestricted_value);
                 setIndex(item.data.postal_code || '');
                 setRegion(item.data.region_with_type || '');
+                setSettlement(item.data.area_with_type || '');
                 setCity(item.data.city_with_type || '');
                 setDistrict(item.data.city || item.data.area_with_type || '');
                 setStreet(
@@ -107,7 +108,7 @@ const Search: React.FC = () => {
         </ul>
       )}
 
-      {/* <div className={search.containerSearch}>
+      <div className={search.containerSearch}>
         <div>
           <p>Индекс:</p>
           <input
@@ -188,7 +189,7 @@ const Search: React.FC = () => {
             onChange={(e) => setFlat(e.target.value)}
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

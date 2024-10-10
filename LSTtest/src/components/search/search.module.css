@@ -24,12 +24,13 @@
 }
 
 .containerSearch {
-    display: grid;
+    display: none;
+    /* display: grid;
     justify-items: space-around;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     place-self: center;
-    column-gap: 4em;
+    column-gap: 4em; */
 }
 
 .containerSearch input {
